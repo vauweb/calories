@@ -14,7 +14,7 @@ export const caliumTitle_1 = {
   fact: "Фактически употребленная норма (в граммах) - сюда вставляем сколько съели",
   day_norm: "% покрытия дневной нормы",
 };
-export const calium_1: CaliumInfo[] = [
+export const calium_1: () => CaliumInfo[] = () => [
   {
     name: "Казеиновый протеин (Casein)",
     count100: 1300,

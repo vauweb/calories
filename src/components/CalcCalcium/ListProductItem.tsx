@@ -24,7 +24,12 @@ export const ListProductItem: FunctionalComponent<Props> = (props) => {
   };
   return (
     <li class="list-group-item d-flex align-items-center">
-      <div class="flex-grow-1">{props.info.name}</div>
+      <div class="flex-grow-1">
+        <div>{props.info.name}</div>
+        <div>
+          {props.info.count100} / {props.info.need_norm}
+        </div>
+      </div>
       <div class="text-end ms-2">{props.info.day_norm}%</div>
       <div>
         <button

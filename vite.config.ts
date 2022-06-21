@@ -9,6 +9,7 @@ import svgLoader from "vite-svg-loader";
 export default defineConfig({
   plugins: [vue(), vueJsx(), svgLoader({ defaultImport: "raw", svgo: false })],
   server: {
+    base: "./",
     host: "192.168.1.15",
     port: 3005,
   },
