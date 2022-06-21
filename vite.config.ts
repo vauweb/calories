@@ -9,7 +9,7 @@ import svgLoader from "vite-svg-loader";
 export default defineConfig({
   plugins: [vue(), vueJsx(), svgLoader({ defaultImport: "url", svgo: false })],
   server: {
-    base: "./calories/",
+    base: "./",
     host: "192.168.1.15",
     port: 3005,
   },
